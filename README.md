@@ -20,6 +20,53 @@ Built with a microservices architecture, it supports real-time transaction handl
 # System Architecture (High-Level):
 Microservices will allow for independent scaling of the components based on the load. Key services might include:
 
+```bash
+/child-support-payment-system
+│
+├── /src/main/java/com/company/paymentsystem
+│   ├── /application
+│   │   ├── PaymentService.java        # Service layer (business logic)
+│   │   ├── WorkflowService.java       # Workflow processing logic
+│   │   └── PaymentController.java     # API layer (REST controllers)
+│   │
+│   ├── /domain
+│   │   ├── Payment.java               # Core business model (entities)
+│   │   ├── Workflow.java              # Workflow entity
+│   │   └── Remittance.java            # Remittance entity
+│   │
+│   ├── /infrastructure
+│   │   ├── /persistence
+│   │   │   ├── PaymentRepository.java # Data access layer (JPA/Hibernate)
+│   │   ├── /messaging
+│   │   │   ├── PaymentMessageHandler.java  # Handling async message queues
+│   │   └── /external
+│   │       ├── ACHGateway.java        # API integration with ACH network
+│   │       └── NACHAProcessor.java    # Integration with NACHA standards
+│   │
+│   ├── /config                        # Application configuration (Spring beans)
+│   │   ├── AppConfig.java             # Main configuration (Spring Boot)
+│   │   ├── SecurityConfig.java        # Security configuration (authentication)
+│   │   └── QueueConfig.java           # Kafka/RabbitMQ config
+│   │
+│   └── /util                          # Utility classes (e.g., parsers, validators)
+│       ├── ACHValidator.java          # Validating ACH formats
+│       ├── NACHAFormatter.java        # Formatting files for NACHA standards
+│       └── Logger.java                # Logging utilities
+│
+├── /src/test/java/com/company/paymentsystem
+│   ├── /unit
+│   └── /integration                   # Integration tests for API and DB
+│
+├── /resources
+│   ├── application.properties         # Application properties (db, security)
+│   ├── logback.xml                    # Logging configuration
+│   └── payment_workflow.yml           # Workflow configurations
+│
+├── /docs                              # Project documentation and API specs
+└── pom.xml                            # Maven/Gradle dependency file
+
+```
+
 * User Service: Handles authentication, authorization, and profile management for SDU employees, employers, custodians.
 * Payment Service: Core service that handles child support payment processing, ACH transfers, and remittance generation.
 * Reporting Service: Provides reports on payments, reconciliations, and balances for SDUs, states, and custodial entities.
