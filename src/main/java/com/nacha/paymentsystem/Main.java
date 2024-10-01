@@ -1,4 +1,4 @@
-package com.nacha.paymentsystem;
+org.nacha.paymentsystem.Main;
 
 public class Main {
     public static void main(String[] args) {

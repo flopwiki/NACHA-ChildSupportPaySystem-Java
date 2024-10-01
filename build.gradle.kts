@@ -1,4 +1,4 @@
-group = "com.example"
+group = "org.nacha"
 version = "1.0-SNAPSHOT"
 description = "nacha-paymentsystem"
 
@@ -37,7 +37,7 @@ tasks.test {
 
 application {
     // Define the main class for the application (replace with your main class)
-    mainClass.set("com.nacha.paymentsystem.Main")  // Adjust this to the actual package and class name
+    mainClass.set("org.nacha.paymentsystem.Main")  // Adjust this to the actual package and class name
 }
 
 tasks.withType<JavaCompile> {
