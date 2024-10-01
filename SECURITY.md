@@ -6,7 +6,7 @@ We maintain security updates for the following versions of the Child Support Pay
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0.24   | :white_check_mark:  |
-| < 1.0.23   | :x:                |
+| < 1.0.21   | :x:                |
 
 ## Reporting a Vulnerability
 
