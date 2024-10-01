@@ -19,7 +19,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradle build
 
     - name: Run tests
-      run: ./gradlew test
+      run: ./gradle test
