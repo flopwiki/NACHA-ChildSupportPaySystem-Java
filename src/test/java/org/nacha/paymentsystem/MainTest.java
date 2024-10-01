@@ -1,6 +1,6 @@
 package org.nacha.paymentsystem;
 
-import com.nacha.paymentsystem.Welcome.Welcome;
+import org.nacha.paymentsystem.Welcome.Welcome;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
