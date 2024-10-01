@@ -1,13 +1,15 @@
-org.nacha.paymentsystem.Main;
+package org.nacha.paymentsystem;
 
+import com.nacha.paymentsystem.Welcome.Welcome;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MainTest {
     @Test
-    void testWelcomeMessge() {
+    void testWelcomeMessage() {
         // Testing the output of the main logic (example)
         String expected = "Welcome to the Child Support Payment System";
-        assertEqual(expected, Main.getWelcomeMessage());
+        Welcome Welcome = new Welcome();
+        assertEquals(expected, Welcome.getWelcomeMessage());
     }
 }
