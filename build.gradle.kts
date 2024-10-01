@@ -37,7 +37,7 @@ tasks.test {
 
 application {
     // Define the main class for the application (replace with your main class)
-    mainClass.set("org.nacha.paymentsystem.MainTest")  // Adjust this to the actual package and class name
+    mainClass.set("org.nacha.paymentsystem.Main")  // Adjust this to the actual package and class name
 }
 
 tasks.withType<JavaCompile> {
