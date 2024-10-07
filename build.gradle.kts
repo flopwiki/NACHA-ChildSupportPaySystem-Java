@@ -5,6 +5,7 @@ description = "nacha-paymentsystem"
 plugins {
     // Java plugin for building Java applications
     id("java")
+    id("jacoco")
 
     // Apply application plugin if you're building an executable app
     application
