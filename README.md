@@ -100,3 +100,6 @@ Microservices will allow for independent scaling of the components based on the 
 * Ensure all services are packaged in Docker containers and can be orchestrated with Kubernetes, allowing you to scale up services in response to demand.
 ## CI/CD Pipeline: 
 * Set up a continuous integration/continuous deployment (CI/CD) pipeline using Jenkins or GitHub Actions, automating builds, testing, and deployment to ensure rapid and reliable delivery.
+
+## Warranty
+https://www.nacha.org/sites/default/files/2024-10/Nacha_Rules_TOU_print-ebook.pdf
