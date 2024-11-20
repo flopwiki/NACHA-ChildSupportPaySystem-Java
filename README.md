@@ -102,4 +102,6 @@ Microservices will allow for independent scaling of the components based on the 
 * Set up a continuous integration/continuous deployment (CI/CD) pipeline using Jenkins or GitHub Actions, automating builds, testing, and deployment to ensure rapid and reliable delivery.
 
 ## Warranty
-https://www.nacha.org/sites/default/files/2024-10/Nacha_Rules_TOU_print-ebook.pdf
+[Rule book](https://www.nacha.org/sites/default/files/2024-10/Nacha_Rules_TOU_print-ebook.pdf),
+
+[User Story]("https://chatgpt.com/share/673e1985-68a0-8006-9f02-4f5f284c9cd8")
