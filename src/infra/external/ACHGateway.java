@@ -1,8 +1,15 @@
-package org.nacha.paymentsystem;
+package org.nacha.paymentsystem.infra.external;
 
-import com.company.paymentsystem.util.Logger;
+import org.springframework.stereotype.Component;
+import java.util.logging.Logger;
 
+
+@Component
 public class ACHGateway {
+    public void sendToACHNetwork(String paymentDetails) {
+        // Logic for communicating with ACH network
+    }
+    
     public boolean sendPayment(String accountNumber, double amount) {
         // Encrypt account number for security
         String encryptedAccount = encryptData(accountNumber);
