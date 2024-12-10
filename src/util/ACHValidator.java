@@ -1,4 +1,4 @@
-package org.nacha.paymentsystem;
+package org.nacha.paymentsystem.util;
 
 public class ACHValidator {
     public static boolean isValidAccountNumber(String accountNumber) {

@@ -9,7 +9,7 @@ public class ACHGateway {
     public void sendToACHNetwork(String paymentDetails) {
         // Logic for communicating with ACH network
     }
-    
+
     public boolean sendPayment(String accountNumber, double amount) {
         // Encrypt account number for security
         String encryptedAccount = encryptData(accountNumber);

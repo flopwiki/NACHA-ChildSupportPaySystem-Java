@@ -32,4 +32,8 @@ public class PaymentService {
         // Validation logic
     }
 
+    public String findById(Long id) {
+        return "data found"
+    }
+
 }
