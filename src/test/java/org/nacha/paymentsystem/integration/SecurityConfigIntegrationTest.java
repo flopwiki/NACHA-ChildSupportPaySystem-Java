@@ -31,7 +31,7 @@ class SecurityConfigIntegrationTest {
     @Test
     void shouldDenyAccessToSecuredEndpointWithoutAuthentication() {
         // Arrange
-        String securedUrl = "http://localhost:" + port + "/api/payments/test";
+        String securedUrl = "http://localhost:5000" + port + "/api/payments/test";
 
         // Act
         ResponseEntity<String> response = restTemplate.getForEntity(securedUrl, String.class);
@@ -43,7 +43,7 @@ class SecurityConfigIntegrationTest {
     @Test
     void shouldAllowAccessToUnsecuredEndpoint() {
         // Arrange
-        String unsecuredUrl = "http://localhost:" + port + "/api/public/test";
+        String unsecuredUrl = "http://localhost:5000" + port + "/api/public/test";
 
         // Act
         ResponseEntity<String> response = restTemplate.getForEntity(unsecuredUrl, String.class);
@@ -55,7 +55,7 @@ class SecurityConfigIntegrationTest {
     @Test
     void shouldGrantAccessToSecuredEndpointWithValidCredentials() {
         // Arrange
-        String securedUrl = "http://localhost:" + port + "/api/payments/test";
+        String securedUrl = "http://localhost:5000" + port + "/api/payments/test";
         HttpHeaders headers = new HttpHeaders();
         headers.setBasicAuth("user", "password");
 
