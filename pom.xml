@@ -31,6 +31,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.afrunt</groupId>
+            <artifactId>jach</artifactId>
+            <version>0.3.4.2</version>
+        </dependency>
 
         <!-- Add other dependencies as necessary (e.g., for logging, database, etc.) -->
 
