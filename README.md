@@ -45,8 +45,7 @@ Microservices will allow for independent scaling of the components based on the 
 │   │
 │   ├── /config                        # Application configuration (Spring beans)
 │   │   ├── AppConfig.java             # Main configuration (Spring Boot)
-│   │   ├── SecurityCon
-fig.java        # Security configuration (authentication)
+│   │   ├── SecurityConfig.java        # Security configuration (authentication)
 │   │   └── QueueConfig.java           # Kafka/RabbitMQ config
 │   │
 │   └── /util                          # Utility classes (e.g., parsers, validators)
