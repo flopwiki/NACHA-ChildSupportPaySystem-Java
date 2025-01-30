@@ -26,4 +26,15 @@ public class PaymentSecurityTest {
                 assertFalse(loggedMessage.contains(ssn),
                 "SSN was logged in plaintext!");
         }
+
+        @Test
+        void testBankAccountNumberIsMasked() {
+                String accountNumber = "123456789";
+                org.nacha.paymentsystem.ChildSupportPayment payment =
+                        new org.nacha.paymentsystem.ChildSupportPayment();
+
+                String loggedData = payment.toString();
+                assertFalse(loggedData.contains(accountNumber),
+                        "Bank account number leaked!");
+        }
 }

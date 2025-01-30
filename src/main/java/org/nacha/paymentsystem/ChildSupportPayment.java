@@ -6,9 +6,13 @@ public class ChildSupportPayment {
 
         public ChildSupportPayment(String johnDoe, String ssn, String number, String number1, double v) {}
 
+        public ChildSupportPayment() {
+
+        }
+
         @Override
         public String toString() {
-                return "Payment: " + name + " SSN: " + ssn; // SSN is visible
-                
+                String maskedSSN = "***-**-" + ssn.substring(7);
+                return "Payment: " + name + " SSN: " + maskedSSN;
         }
 }
