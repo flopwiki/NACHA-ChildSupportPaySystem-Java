@@ -3,7 +3,7 @@ version = "1.0-SNAPSHOT"
 description = "nacha-paymentsystem"
 
 plugins {
-    id("org.springframework.boot") version "3.3.4"
+    id("org.springframework.boot") version "5.3.30"
     id("io.spring.dependency-management") version "1.1.6"
     // Java plugin for building Java applications
     id("java")
