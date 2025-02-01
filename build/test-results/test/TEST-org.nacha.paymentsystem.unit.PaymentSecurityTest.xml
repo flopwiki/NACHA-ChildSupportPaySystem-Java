@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nacha.paymentsystem.unit.PaymentSecurityTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-01-29T23:58:57" hostname="BT7274" time="2.325">
+  <properties/>
+  <testcase name="testSSNIsNotLoggedInPlaintext()" classname="org.nacha.paymentsystem.unit.PaymentSecurityTest" time="2.308">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;String.substring(int)&quot; because &quot;this.ssn&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.substring(int)&quot; because &quot;this.ssn&quot; is null
+	at org.nacha.paymentsystem.ChildSupportPayment.toString(ChildSupportPayment.java:15)
+	at org.nacha.paymentsystem.unit.PaymentSecurityTest.testSSNIsNotLoggedInPlaintext(PaymentSecurityTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="testBankAccountNumberIsMasked()" classname="org.nacha.paymentsystem.unit.PaymentSecurityTest" time="0.006">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;String.substring(int)&quot; because &quot;this.ssn&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.substring(int)&quot; because &quot;this.ssn&quot; is null
+	at org.nacha.paymentsystem.ChildSupportPayment.toString(ChildSupportPayment.java:15)
+	at org.nacha.paymentsystem.unit.PaymentSecurityTest.testBankAccountNumberIsMasked(PaymentSecurityTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\bt_7274\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
