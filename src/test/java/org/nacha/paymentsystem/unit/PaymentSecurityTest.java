@@ -3,7 +3,7 @@ package org.nacha.paymentsystem.unit;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
+
 import java.util.logging.Logger;
 
 public class PaymentSecurityTest {
